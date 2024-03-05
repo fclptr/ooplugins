@@ -1,10 +1,12 @@
-function somethingToDo(info) {
+function somethingToDo(that, info) {
     console.log("somethingToDo");
-    console.log(window.Asc);
-    var oWorksheet = window.Asc.plugin.Api.GetActiveSheet();    
-    oWorksheet.GetRange("A1").SetValue("Info: ");
-    oWorksheet.GetRange("A1").AutoFit(false, true);
-    oWorksheet.GetRange("B1").SetValue(info);
+    console.log(that);
+    that.callCommand( function () {
+        var oWorksheet = Api.GetActiveSheet();    
+        oWorksheet.GetRange("A1").SetValue("Info: ");
+        oWorksheet.GetRange("A1").AutoFit(false, true);
+        oWorksheet.GetRange("B1").SetValue(info);
+    }, false, true);
 }
 
 (function (window, undefined) {
@@ -26,8 +28,8 @@ function somethingToDo(info) {
 		};
         
         document.getElementById("btn_data_range").onclick = function() {    
-            let info="form et..."
-            that.callCommand(somethingToDo(info), false, true);
+            let info="form et...";
+            somethingToDo(that, info);
         };
 
     };
