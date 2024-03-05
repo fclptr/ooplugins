@@ -27,7 +27,7 @@
                 "isCustomWindow": true,
                 "isDisplayedInViewer": true,
                 "isInsideMode": false,
-                "isModal": true,
+                "isModal": false,
                 "isSystem": false,
                 "isUpdateOleOnResize": true,
                 "isViewer": true,
