@@ -1,15 +1,10 @@
-[
-	{ "name": "apertium", "discussion": "221" },
-	{ "name": "deepl", "discussion": "222" },
+[	
 	{ "name": "doc2md", "discussion": "223" },
-	{ "name": "photoeditor", "discussion": "225" },
-	{ "name": "autocomplete", "discussion": "229" },
-	{ "name": "easybib", "discussion": "231" },
+	{ "name": "autocomplete", "discussion": "229" },	
 	{ "name": "html", "discussion": "233" },
 	{ "name": "macros", "discussion": "235" },
 	{ "name": "translator", "discussion": "240" },
 	{ "name": "youtube", "discussion": "241" },
-	{ "name": "wordscounter", "discussion": "242" },
-	{ "name": "chess", "discussion": "246" },	
+	{ "name": "wordscounter", "discussion": "242" },	
 	{ "name": "glavred", "discussion": "274" }	
 ]
