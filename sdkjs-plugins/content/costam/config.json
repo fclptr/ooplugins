@@ -19,9 +19,6 @@
                 "cryptoDisabledOnStart": "true",
                 "cryptoMode": "1",
                 "description": "plugin description",
-                "descriptionLocale": {
-                    "pl": "dodatek czesc"
-                },
                 "EditorsSupport": ["cell"],
                 "events": ["onClick"],                
                 "initData": "",
@@ -34,7 +31,7 @@
                 "isSystem": false,
                 "isUpdateOleOnResize": true,
                 "isViewer": true,
-                "isVisual": false,
+                "isVisual": true,
                 "size": [400, 200],
                 "store": {
                     "background": {
