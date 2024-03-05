@@ -38,7 +38,7 @@ function somethingToDo() {
 		};
 
         document.getElementById("btn_data_range").onclick = function() {    
-            let info="form et...";
+            let info="data range!";
             Asc.scope.info=info;
             console.log("Asc");
             console.log(Asc);
