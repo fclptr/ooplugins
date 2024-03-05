@@ -26,7 +26,7 @@
                 "initOnSelectionChanged": true,
                 "isCustomWindow": true,
                 "isDisplayedInViewer": true,
-                "isInsideMode": false,
+                "isInsideMode": true,
                 "isModal": false,
                 "isSystem": false,
                 "isUpdateOleOnResize": true,
