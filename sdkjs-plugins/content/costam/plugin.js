@@ -1,6 +1,6 @@
 (function (window, undefined) {
     window.Asc.plugin.init = function () {
-        this.call_command(function() {
+        this.callCommand(function() {
             var oWorksheet = Api.GetActiveSheet();
             //oWorksheet.SetName("sheet 1");
             var sName = oWorksheet.GetName();
