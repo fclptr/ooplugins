@@ -10,5 +10,6 @@
         }, true);
     };
     window.Asc.plugin.button = function (id) {
+        
     };
 })(window, undefined);
