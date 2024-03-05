@@ -1,0 +1,75 @@
+
+{
+        "baseUrl": "",
+        "guid": "asc.{FFE1F462-5555-3322-9911-77CC49408888}",
+        "help": "",
+        "minVersion": "6.3.0",
+        "name": "costam",
+        "nameLocale": {
+            "pl": "Czesc"            
+        },
+        "variations": [
+            {
+                "buttons": [
+                    { 
+                        "text": "Cancel",
+                        "primary": false,
+                        "isviewer": false,
+                        "textLocale": {
+                            "pl": "Anulowanie"                            
+                        }
+                    }
+                ],
+                "cryptoDisabledForExternalCloud": "true",
+                "cryptoDisabledForInternalCloud": "true",
+                "cryptoDisabledOnStart": "true",
+                "cryptoMode": "1",
+                "description": "plugin description",
+                "descriptionLocale": {
+                    "pl": "dodatek czesc",
+                },
+                "EditorsSupport": ["cell"],
+                "events": ["onClick"],
+                "icons": ["icon.png", "icon@2x.png"],
+                "icons2": [
+                    {
+                        "100%": { "normal": "icon.png" },
+                        "125%": { "normal": "icon@1.25.png" },
+                        "150%": { "normal": "icon@1.5x.png" },
+                        "175%": { "normal": "icon@1.75.png" },
+                        "200%": { "normal": "icon@2x.png" }
+                    },
+                    {
+                        "style": "dark"
+                    }
+                ],
+                "initData": "",
+                "initDataType": "ole",
+                "initOnSelectionChanged": true,
+                "isCustomWindow": true,
+                "isDisplayedInViewer": true,
+                "isInsideMode": false,
+                "isModal": true,
+                "isSystem": false,
+                "isUpdateOleOnResize": true,
+                "isViewer": true,
+                "isVisual": false,
+                "screens": ["resources/store/screenshots/screen_1.png"],
+                "size": [400, 200],
+                "store": {
+                    "background": {
+                        "light": "#F5F5F5",
+                        "dark": "#444444"
+                    },
+                    "categories": ["specAbilities", "work"],
+                    "icons": {
+                        "light": "resources/store/icons",
+                        "dark" : "resources/store/icons"
+                    },
+                    "screenshots": ["resources/store/screenshots/screen_1.png"]
+                },
+                "url": "index.html"
+            }
+        ],
+        "version": "1.0"
+    };
