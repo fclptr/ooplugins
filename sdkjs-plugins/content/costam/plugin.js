@@ -1,8 +1,6 @@
-function somethingToDo(that) {
+function somethingToDo() {
     console.log("somethingToDo");
-    console.log(that);
-
-    that.callCommand( function () {
+    window.Asc.plugin.callCommand( function () {
         var oWorksheet = Api.GetActiveSheet();    
         oWorksheet.GetRange("A1").SetValue("Info: ");
         oWorksheet.GetRange("A1").AutoFit(false, true);
@@ -13,11 +11,8 @@ function somethingToDo(that) {
 (function (window, undefined) {
     window.Asc.plugin.init = function () {
 
-        let that=this;
-        
-
         document.getElementById("btn_calculation").onclick = function() {
-            that.callCommand(function() {
+            window.Asc.plugin.callCommand(function() {
                 console.log("callCommand!");
                 console.log(Api);
                 var oWorksheet = Api.GetActiveSheet();
@@ -29,12 +24,25 @@ function somethingToDo(that) {
             }, false);
 		};
         
+        document.getElementById("btn_result_range").onclick = function() {
+            window.Asc.plugin.callCommand(function() {
+                console.log("callCommand!");
+                console.log(Api);
+                var oWorksheet = Api.GetActiveSheet();
+                //oWorksheet.SetName("sheet 1");
+                var sName = oWorksheet.GetName();
+                oWorksheet.GetRange("A1").SetValue("Worksheet name: ");
+                oWorksheet.GetRange("A1").AutoFit(false, true);
+                oWorksheet.GetRange("B1").SetValue(sName);
+            }, false);
+		};
+
         document.getElementById("btn_data_range").onclick = function() {    
             let info="form et...";
             Asc.scope.info=info;
             console.log("Asc");
             console.log(Asc);
-            somethingToDo(that);
+            somethingToDo();
         };
 
     };
