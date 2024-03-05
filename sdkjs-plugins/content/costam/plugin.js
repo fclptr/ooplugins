@@ -2,7 +2,7 @@ function somethingToDo() {
     console.log("somethingToDo");
     window.Asc.plugin.callCommand( function () {
         var oWorksheet = Api.GetActiveSheet();    
-        oWorksheet.GetRange("A1").SetValue("Info: ");
+        oWorksheet.GetRange("A1").SetValue("3. Info: ");
         oWorksheet.GetRange("A1").AutoFit(false, true);
         oWorksheet.GetRange("B1").SetValue(Asc.scope.info);
     }, false, true);
@@ -18,7 +18,7 @@ function somethingToDo() {
                 var oWorksheet = Api.GetActiveSheet();
                 //oWorksheet.SetName("sheet 1");
                 var sName = oWorksheet.GetName();
-                oWorksheet.GetRange("A1").SetValue("Worksheet name: ");
+                oWorksheet.GetRange("A1").SetValue("1. Worksheet name: ");
                 oWorksheet.GetRange("A1").AutoFit(false, true);
                 oWorksheet.GetRange("B1").SetValue(sName);
             }, false);
@@ -31,7 +31,7 @@ function somethingToDo() {
                 var oWorksheet = Api.GetActiveSheet();
                 //oWorksheet.SetName("sheet 1");
                 var sName = oWorksheet.GetName();
-                oWorksheet.GetRange("A1").SetValue("Some name: ");
+                oWorksheet.GetRange("A1").SetValue("2. Some name: ");
                 oWorksheet.GetRange("A1").AutoFit(false, true);
                 oWorksheet.GetRange("B1").SetValue("<<<"+sName+">>>");
             }, false);
