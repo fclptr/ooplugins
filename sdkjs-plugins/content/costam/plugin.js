@@ -1,4 +1,4 @@
-function somethingToDo(info) {
+function somethingToDo(Api, info) {
     var oWorksheet = Api.GetActiveSheet();    
     oWorksheet.GetRange("A1").SetValue("Info: ");
     oWorksheet.GetRange("A1").AutoFit(false, true);
@@ -23,7 +23,7 @@ function somethingToDo(info) {
         
         document.getElementById("btn_data_range").onclick = function() {    
             let info="form et..."
-            that.callCommand(somethingToDo(info), false, true);
+            that.callCommand(somethingToDo(Api, info), false, true);
         };
 
     };
